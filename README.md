@@ -14,6 +14,22 @@ These are the basic steps to create your tidal connect client:
 4. copy everything to the final directories
 5. start the tidal connect client 
 
+# Easy Rpi 2/3/[4?] install script
+* change device
+
+        sudo ./pa_devs/run.sh
+        cat pa_devs/devices
+        # choose your card and copy/paste inside 'ifi-streamer-tidal-connect.service'
+        # == in 'devices' files
+        # device#1=AudioBox USB: Audio (hw:1,0)
+        # == in 'ifi-streamer-tidal-connect.service'
+        # --playback-device "AudioBox USB: Audio (hw:1,0)"
+* install
+
+        sudo chmod +x install.sh
+        sudo ./install.sh
+        sudo reboot
+
 # install required shared libraries
 the binaries rely on the presence of some required libraries:
   * libssl1.0.0 
