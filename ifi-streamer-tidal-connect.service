@@ -1,5 +1,7 @@
 [Unit]
 Description=RasPi Streamer Tidal Connect Service
+[Timer]
+OnBootSec=1min
 [Service]
 Restart=on-failure
 ExecStart=/usr/ifi/ifi-tidal-release/bin/tidal_connect_application \
