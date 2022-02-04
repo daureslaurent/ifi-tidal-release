@@ -31,5 +31,6 @@ chmod +x /usr/ifi/ifi-tidal-release/pa_devs/run.sh
 
 # start service and check on status
 systemctl daemon-reload
+systemctl enable ifi-streamer-tidal-connect.service
 systemctl start ifi-streamer-tidal-connect.service 
 systemctl status ifi-streamer-tidal-connect.service
