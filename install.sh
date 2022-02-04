@@ -9,6 +9,8 @@ apt install -y multiarch-support libavformat57 git libportaudio2* libflac++6v5* 
 
 # create working folder
 mkdir /usr/ifi
+mkdir /usr/ifi/ifi-tidal-release
+cp * /usr/ifi/ifi-tidal-release/
 cd /usr/ifi
 
 # download and install other needed dependencies
