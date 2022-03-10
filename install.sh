@@ -35,7 +35,8 @@ systemctl enable ifi-streamer-tidal-connect.service
 systemctl start ifi-streamer-tidal-connect.service 
 systemctl status ifi-streamer-tidal-connect.service
 
-sudo cp asound.conf /etc/
+sudo cp ifi-tidal-release/asound.conf /etc/
+
 sudo apt install screen
 sudo systemctl daemon-reload
 sudo systemctl enable ifi-streamer-controller-speaker.service
