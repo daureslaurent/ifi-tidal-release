@@ -34,3 +34,7 @@ systemctl daemon-reload
 systemctl enable ifi-streamer-tidal-connect.service
 systemctl start ifi-streamer-tidal-connect.service 
 systemctl status ifi-streamer-tidal-connect.service
+
+sudo apt install screen
+sudo systemctl daemon-reload
+sudo systemctl enable ifi-streamer-controller-speaker.service
