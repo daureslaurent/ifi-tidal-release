@@ -15,7 +15,7 @@ ExecStart=/usr/ifi/ifi-tidal-release/bin/tidal_connect_application \
 				--enable-mqa-passthrough true \
 				--log-level 3 \
 				--enable-websocket-log "0" \
-				--playback-device "AudioBox USB: Audio (hw:1,0)"
+				--playback-device "softvol"
 
 User=root
 Group=root
